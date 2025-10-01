@@ -1,0 +1,11 @@
+// package.json
+{
+  "name": "change-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo 'No dev script needed for this setup'",
+    "build": "echo 'No build script needed for this setup'",
+    "start": "echo 'No start script needed'"
+  }
+}

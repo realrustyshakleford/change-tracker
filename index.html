@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Chakra Petch', 'sans-serif'],
+            },
+            colors: {
+              // Light Mode
+              light: {
+                bg: '#f8f8f8',
+                card: '#ffffff',
+                text: '#111827',
+                border: '#111827',
+                accent: '#4f46e5',
+                'accent-hover': '#4338ca',
+              },
+              // Dark Mode
+              dark: {
+                bg: '#050505',
+                card: '#121212',
+                text: '#e5e7eb',
+                border: '#f0f0f0',
+                accent: '#818cf8',
+                'accent-hover': '#6366f1',
+              }
+            },
+            boxShadow: {
+              'brutal': '6px 6px 0 0 #000',
+              'brutal-light': '6px 6px 0 0 #fff',
+            },
+            borderWidth: {
+              '3': '3px',
+            },
+            keyframes: {
+              aurora: {
+                '0%': { backgroundPosition: '0% 50%' },
+                '50%': { backgroundPosition: '100% 50%' },
+                '100%': { backgroundPosition: '0% 50%' },
+              }
+            },
+            animation: {
+              'aurora': 'aurora 20s ease infinite',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.18",
+    "react-markdown": "https://esm.sh/react-markdown@9.0.1",
+    "remark-gfm": "https://esm.sh/remark-gfm@4.0.0",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "docx": "https://esm.sh/docx@8.5.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
